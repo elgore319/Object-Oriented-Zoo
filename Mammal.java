@@ -1,4 +1,4 @@
-public class Mammal extends Animal {
+public class Mammal extends Animal implements Walkable {
     public Mammal(String name) {
         super(name);
     }
@@ -11,5 +11,10 @@ public class Mammal extends Animal {
     @Override
     public void move() {
         System.out.println("The " + getName() + " runs on land.");
+    }
+
+    @Override
+    public void walk() {
+        System.out.println("The " + getName() + " walks on four legs.");
     }
 }

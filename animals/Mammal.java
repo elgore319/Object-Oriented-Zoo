@@ -1,4 +1,15 @@
+/**
+ * Represents a mammal in the zoo.
+ */
+package animals;
+
+import interfaces.Walkable;
+
 public class Mammal extends Animal implements Walkable {
+    /**
+     * Constructs a mammal with the given name.
+     * @param name the name of the mammal
+     */
     public Mammal(String name) {
         super(name);
     }

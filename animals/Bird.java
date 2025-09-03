@@ -1,4 +1,16 @@
+/**
+ * Represents a bird in the zoo.
+ */
+package animals;
+
+import interfaces.Flyable;
+import interfaces.Walkable;
+
 public class Bird extends Animal implements Flyable, Walkable {
+    /**
+     * Constructs a bird with the given name.
+     * @param name the name of the bird
+     */
     public Bird(String name) {
         super(name);
     }

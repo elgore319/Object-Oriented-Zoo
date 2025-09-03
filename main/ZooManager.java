@@ -31,7 +31,7 @@ public class ZooManager {
             System.out.println("1. List All Animals");
             System.out.println("2. Make All Move");
             System.out.println("3. Make All Sound");
-            System.out.println("4. Show Special Abilities");
+            System.out.println("4. Show Method of Travel");
             System.out.println("5. Exit");
             System.out.print("Choose an option: ");
             try {

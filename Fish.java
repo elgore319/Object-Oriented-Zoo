@@ -1,9 +1,9 @@
-public class Cat extends Animal implements Walkable
+public class Fish extends Animal implements Swimmable
 {
     private String name;
     private String species;
     
-    public Cat(String name, String species) 
+    public Fish(String name, String species) 
     {
         this.name = name;
         this.species = species;
@@ -18,28 +18,28 @@ public class Cat extends Animal implements Walkable
     {
         return species;
     }
-
+    
     @Override
     void makeSound() 
     {
-        System.out.println("Meow");
+        System.out.println("Blub");
     }
 
     @Override
     void eat() 
     {
-        System.out.println("The cat is eating.");
+        System.out.println("The fish is eating.");
     }
 
     @Override
     void move() 
     {
-        System.out.println("The cat is prowling.");
+        System.out.println("The fish is swimming.");
     }
 
     @Override
-    public void walk() 
+    public void swim() 
     {
-        System.out.println("The cat is walking.");
+        System.out.println("The fish is swimming.");
     }
 }

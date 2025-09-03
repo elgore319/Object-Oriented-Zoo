@@ -1,9 +1,9 @@
-public class Cat extends Animal implements Walkable
+public class Primate extends Animal implements Walkable
 {
     private String name;
     private String species;
     
-    public Cat(String name, String species) 
+    public Primate(String name, String species) 
     {
         this.name = name;
         this.species = species;
@@ -18,28 +18,28 @@ public class Cat extends Animal implements Walkable
     {
         return species;
     }
-
+    
     @Override
     void makeSound() 
     {
-        System.out.println("Meow");
+        System.out.println("Ooh ooh aah aah");
     }
 
     @Override
     void eat() 
     {
-        System.out.println("The cat is eating.");
+        System.out.println("The primate is eating.");
     }
 
     @Override
     void move() 
     {
-        System.out.println("The cat is prowling.");
+        System.out.println("The primate is swinging through the trees.");
     }
 
     @Override
     public void walk() 
     {
-        System.out.println("The cat is walking.");
+        System.out.println("The primate is walking.");
     }
 }

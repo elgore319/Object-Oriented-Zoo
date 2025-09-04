@@ -12,8 +12,7 @@ public class Main
          */
         ZooManager zooManager = new ZooManager();
         zooManager.addAnimal();
-        zooManager.interactWithAnimal();
-        
+        zooManager.runMenu();
         
     }
     

@@ -36,6 +36,9 @@ public class ZooManager
         animals.add(new Primate("George","Pan troglodytes"));
     }
     
+    /**
+     * Method to display the menu and handle user choices.
+     */
     public void runMenu()
     {
         int choice = 0;
@@ -126,7 +129,9 @@ public class ZooManager
             System.out.println("An unexpected error occurred: " + e.getMessage());
         }
 }
-        
+        /**
+         * Method to list all animals in the zoo.
+         */
         public void animalList()
         {
             System.out.println("Animals in the Zoo:");
@@ -136,6 +141,10 @@ public class ZooManager
                 System.out.println((i + 1) + ". " + animal.getClass().getSimpleName());
             }
         }
+
+        /**
+         * Methods to make all animals perform actions.
+         */
         public void makeAllSound() 
         {
             for (Animal animal : animals) 
@@ -144,6 +153,9 @@ public class ZooManager
             }
         }
 
+        /**
+         * Methods to make all animals perform actions.
+         */
         public void makeAllMove() 
         {
          for (Animal animal : animals) 
@@ -152,6 +164,9 @@ public class ZooManager
             }
         }
 
+        /**
+         * Methods to make all animals perform actions.
+         */
         public void makeAllEat() 
         {
             for (Animal animal : animals) 

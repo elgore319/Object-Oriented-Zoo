@@ -1,6 +1,6 @@
-package Animal;
 
-import interfaces.Walkable;
+package Animal;
+import Interfaces.Walkable;
 
 public class Cat extends Animal implements Walkable
 {
@@ -23,20 +23,21 @@ public class Cat extends Animal implements Walkable
         return species;
     }
 
+
     @Override
-    void makeSound() 
+    public void makeSound() 
     {
         System.out.println("Meow");
     }
 
     @Override
-    void eat() 
+    public void eat() 
     {
         System.out.println("The cat is eating.");
     }
 
     @Override
-    void move() 
+    public void move() 
     {
         System.out.println("The cat is prowling.");
     }

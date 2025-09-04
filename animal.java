@@ -1,6 +1,6 @@
-abstract class Animal 
+public abstract class Animal 
 {
-    abstract void makeSound();
-    abstract void eat();
-    abstract void move();
+   public abstract void makeSound();
+   public abstract void eat();
+   public abstract void move();
 }

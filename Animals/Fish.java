@@ -1,4 +1,6 @@
-public class Fish extends Animal implements Swimmable
+package Animals;
+
+public class Fish extends Animal 
 {
     private String name;
 
@@ -12,26 +14,22 @@ public class Fish extends Animal implements Swimmable
         this.name = name;
     }
 
-    public String getName()
+    @Override
+    public void getName()
     {
-        return name;
+        System.out.println(name);
     }
 
     @Override
     public void makeSound()
     {
-        System.out.println("Blub Blub");
+        System.out.println("Blub blub says the " + name + ".");
     }
 
     @Override
     public void move()
     {
-        System.out.println("The " + name + " moves by swimming");
-    }
-
-    @Override
-    public void swim()
-    {
         System.out.println("The " + name + " swims.");
     }
+
 }
